@@ -1,9 +1,16 @@
 @import "reset.css";
 
+:root {
+  --main-blue: #67b7ec;
+  --main-white: #f7f5f5;
+  --main-black: #202020;
+  --main-shasow-color: rgba(0, 0, 0, 0.247)
+}
+
 body {
   height: 100vh;
   margin: 0;
-  background: linear-gradient(90deg, #67b7ec 50%, #f7f5f5 50%);
+  background: linear-gradient(90deg, var(--main-blue) 50%, var(--main-white) 50%);
 }
 
 .question {
@@ -12,21 +19,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #3c7091;
+  color: var(--main-black);
   font-size: 5vw;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
-}
-.question::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: attr(data-split);
-  width: 50%;
-  color: #202020;
-  overflow: hidden;
+  text-shadow: var(--main-shasow-color) 4px 4px;
 }
 
 .bg-left .frontTitle {
@@ -36,7 +35,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 6px;
   margin: 0;
-  color: #f7f5f5;
+  color: var(--main-white);
   font-size: 7vw;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -48,7 +47,11 @@ body {
 
 .bg-left .frontTitle:hover {
   cursor: pointer;
-  color: #202020;
+  color: var(--main-black);
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%) scale(1.15);
+  transition-duration: 0.5s;
 }
 
 .bg-right .backTitle {
@@ -58,7 +61,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 6px;
   margin: 0;
-  color: #67b7ec;
+  color: var(--main-blue);
   font-size: 7vw;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -70,5 +73,9 @@ body {
 
 .bg-right .backTitle:hover {
   cursor: pointer;
-  color: #202020;
+  color: var(--main-black);
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%) scale(1.15);
+  transition-duration: 0.5s;
 }
