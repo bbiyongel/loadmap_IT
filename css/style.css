@@ -1,0 +1,74 @@
+@import "reset.css";
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg, #67b7ec 50%, #f7f5f5 50%);
+}
+
+.question {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #3c7091;
+  font-size: 5vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.question::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-split);
+  width: 50%;
+  color: #202020;
+  overflow: hidden;
+}
+
+.bg-left .frontTitle {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  padding: 6px;
+  margin: 0;
+  color: #f7f5f5;
+  font-size: 7vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: solid 4px;
+  border-radius: 10px;
+}
+
+.bg-left .frontTitle:hover {
+  cursor: pointer;
+  color: #202020;
+}
+
+.bg-right .backTitle {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  padding: 6px;
+  margin: 0;
+  color: #67b7ec;
+  font-size: 7vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: solid 4px;
+  border-radius: 10px;
+}
+
+.bg-right .backTitle:hover {
+  cursor: pointer;
+  color: #202020;
+}
