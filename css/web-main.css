@@ -50,7 +50,7 @@ body {
   color: var(--main-black);
   top: 50%;
   left: 25%;
-  transform: translate(-50%, -50%) scale(1.15);
+  transform: translate(-50%, -50%) scale(1.02);
   transition-duration: 0.5s;
 }
 
@@ -76,6 +76,6 @@ body {
   color: var(--main-black);
   top: 50%;
   left: 75%;
-  transform: translate(-50%, -50%) scale(1.15);
+  transform: translate(-50%, -50%) scale(1.02);
   transition-duration: 0.5s;
 }

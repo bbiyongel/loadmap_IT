@@ -1,0 +1,12 @@
+@import "reset.css";
+
+:root {
+  --main-blue: #67b7ec;
+  --main-white: #f7f5f5;
+  --main-black: #202020;
+  --main-shasow-color: rgba(0, 0, 0, 0.247)
+}
+
+body {
+  background: var(--main-white);
+}
