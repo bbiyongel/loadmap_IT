@@ -4,9 +4,88 @@
   --main-blue: #67b7ec;
   --main-white: #f7f5f5;
   --main-black: #202020;
-  --main-shasow-color: rgba(0, 0, 0, 0.247)
+  --main-shasow-color: rgba(0, 0, 0, 0.247);
+
+  --light-gray: #b1b1b146;
+  --dark-gray: #14141496;
+}
+
+* {
+  text-decoration: none;
+  color: var(--main-black);
 }
 
 body {
-  background: var(--main-white);
+  background: var(--main-blue);
 }
+
+.deactivation {
+  display: none;
+}
+
+.bgCardView {
+  margin: 5%;
+  padding: 2.5% 5%;
+  border-radius: 8px;
+  background-color: var(--main-white);
+}
+
+.bgCardView .cardViews .cardView {
+  margin: 2.5% 0;
+  padding: 3%;
+  border: double 6px var(--light-gray);
+  border-radius: 6px;
+}
+
+.bgCardView .cardViews .cardView .titleAndLink {
+  display: flex;
+  align-items: center;
+}
+
+.bgCardView .cardViews .cardView .title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.bgCardView .cardViews .cardView .title:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+.bgCardView .cardViews .cardView i {
+  font-size: 12px;
+  color: var(--main-blue);
+  margin-left: 5px;
+  margin-bottom: 14px;
+}
+
+.bgCardView .cardViews .cardView i:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+.bgCardView .cardViews .cardView a {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--main-blue);
+  margin: 5px;
+  padding: 1px 4px;
+}
+
+.bgCardView .cardViews .cardView a:hover {
+  color: brown;
+}
+
+.bgCardView .cardViews .cardView .comments {
+  margin: 0 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+
+
+
+
