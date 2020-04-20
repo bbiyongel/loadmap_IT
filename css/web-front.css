@@ -16,22 +16,38 @@
 }
 
 body {
-  background: var(--main-blue);
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg, var(--main-blue) 50%, var(--main-white) 50%);
 }
 
+/* 비활성화 클래스 */
 .deactivation {
   display: none;
 }
 
+/* 메인 타이틀 */
+.mainTitle {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--main-black);
+  font-size: 10vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* 백그라운드 카드뷰 전체 */
 .bgCardView {
-  margin: 5%;
+  margin: 0 5%;
   padding: 2.5% 5%;
   border-radius: 8px;
   background-color: var(--main-white);
 }
 
+/* 카드뷰 */
 .bgCardView .cardViews .cardView {
-  margin: 2.5% 0;
+  margin-bottom: 2.5%;
   padding: 3%;
   border: double 6px var(--light-gray);
   border-radius: 6px;
@@ -42,34 +58,34 @@ body {
   align-items: center;
 }
 
-.bgCardView .cardViews .cardView .title {
+.bgCardView .cardViews .cardView .cardTitle {
   font-size: 24px;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
-.bgCardView .cardViews .cardView .title:hover {
+.bgCardView .cardViews .cardView .cardTitle:hover {
   color: brown;
   cursor: pointer;
 }
 
-.bgCardView .cardViews .cardView i {
-  font-size: 12px;
+.bgCardView .cardViews .cardView .linkBtn {
+  font-size: 16px;
   color: var(--main-blue);
   margin-left: 5px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
-.bgCardView .cardViews .cardView i:hover {
+.bgCardView .cardViews .cardView .linkBtn:hover {
   color: brown;
   cursor: pointer;
 }
 
 .bgCardView .cardViews .cardView a {
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--main-blue);
-  margin: 5px;
+  margin: 3px;
   padding: 1px 4px;
 }
 
